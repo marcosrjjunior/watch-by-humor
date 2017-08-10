@@ -1,0 +1,13 @@
+.Title {
+  text-align: center;
+}
+
+.Title-logo {
+  animation: Title-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes Title-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,87 @@
+.TitleItem {
+  padding: 3.5vh 0;
+  margin: 10vh auto;
+  min-width: 20vw;
+  max-width: 55vh;
+  min-height: 20vh;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition: .6s ease;
+  background: #222;
+  text-align: center;
+}
+
+.TitleItem:hover {
+  box-shadow: 0 18px 35px rgba(50, 50, 90, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+.TitleItem img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.TitleItem .poster {
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.TitleItem h1 {
+  font-size: 0.8rem;
+  color: #8ca191;
+  letter-spacing: 1px;
+  margin: 2vh 4vw;
+}
+
+/*TitleItem h2 featured*/
+.TitleItem h2 {
+  font-size: .4rem;
+  color: #A0A6AB;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.TitleItem hr {
+  width: 20%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border: 0;
+  border-bottom: 1px solid #E6E9EC;
+}
+
+.TitleItem p {
+  margin: .5vh 4vw;
+  text-align: center;
+  color: #A0A6AB;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 1.25rem;
+  /*font-family: "Playfair Display", serif;*/
+}
+
+.TitleItem .space {
+  height: 1vh;
+}
+
+.TitleItem .btn,
+.TitleItem a.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 8px 8px;
+  letter-spacing: .02rem;
+  background: #664EF7;
+  color:white;
+  font-family: "Open Sans", sans-serif;
+  font-size:1rem;
+  margin: 20px auto;
+}
