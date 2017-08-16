@@ -5,12 +5,12 @@ class Condition extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { condition: props.condition };
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
     render() {
         let options = '';
+        const condition = this.props.condition;
         if (data[this.props.humor]) {
             options = data[this.props.humor].options.map((option) => {
                 return (
@@ -26,7 +26,7 @@ class Condition extends Component {
             <div>
                 <select
                     name="condition"
-                    value={this.state.condition}
+                    value={condition}
                     onChange={event => this.handleInputChange(event.target.value) }
                     className="App-margin select"
                 >
