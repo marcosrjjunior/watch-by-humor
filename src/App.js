@@ -55,7 +55,7 @@ class App extends Component {
         const nextWeek = moment().add(1, 'weeks').format('YYYY-MM-DD');
         const type = this.state.type;
 
-        var url = `https://api.themoviedb.org/3/discover/${type}?api_key=${apiKey}&language=en-US&with_original_language=en&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=${this.state.genres}&page=${this.state.page}&release_date.lte=${nextWeek}&release_date.gte=${sevenMonthsAgo}`;
+        var url = `https://api.themoviedb.org/3/discover/${type}?api_key=${apiKey}&language=en-US&with_original_language=en&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=${this.state.genres}&page=${this.state.page}&primary_release_date.lte=${nextWeek}&primary_release_date.gte=${sevenMonthsAgo}`;
 
         fetch(url).then(function(response) {
             if(response.ok) {
